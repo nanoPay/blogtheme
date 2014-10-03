@@ -1214,3 +1214,76 @@ p.logged-in-as {
     margin-top: 10px;
   }
 }
+
+/* nanoPay overrides */
+
+body {
+	font-family:'Source Sans Pro',sans-serif;
+	font-size:16px;
+/*	background-color:#454547; */
+	background-color:#fff;
+	color:#5a5f66;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color:#696f77;
+	font-family: 'Source Sans Pro',sans-serif;
+}
+
+h1.entry-title {
+	font-size:40px;
+	font-weight: 200;
+	letter-spacing: -1px;
+}
+
+#secondary .widget > h3 {
+	font-size:18px;
+	letter-spacing:1px;
+	color:#d9534f;
+}
+
+.entry-meta .byline {
+	display:none;
+}
+
+.btn-default {
+	background-color: #d9534f;
+	border-color: #d43f3a;	
+}
+
+.btn-default:hover {
+	color: #fff;
+	background-color: #d2322d;
+	border-color: #ac2925;
+}
+
+a {
+	color:#d9534f;
+}
+
+a:hover {
+	opacity:0.7;
+	-moz-opacity:0.7;
+	filter:alpha(opacity=70);
+}
+
+.post-inner-content {
+	border:0;
+	/*border:3px #6C6C6C solid;*/
+}
+
+.well {
+	background-color:#58585a;
+	border-radius:0;
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	border-color:#6C6C6C;
+}
+
+.widget ul li {
+	border:0;
+}
+
+#secondary .widget a {
+	color:#fff;
+}
