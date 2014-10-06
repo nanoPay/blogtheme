@@ -45,7 +45,7 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 
-	<header id="masthead" class="site-header" role="banner">
+	<header id="masthead" class="site-header" role="banner" style="display:none">
 		<nav class="navbar navbar-default" role="navigation">
 			<div class="container">
 				<div class="row">
@@ -82,6 +82,25 @@
 		  </div>
 		</nav><!-- .site-navigation -->
 	</header><!-- #masthead -->
+	<header>
+	  <div class="navbar">
+	    <div class="header"><a data-toggle="collapse" data-target=".navbar-collapse" href="#" class="navbar-toggle"><i class="fa fa-align-justify fa-2x"></i></a>
+	      <!-- Logo--><a href="http://nanopay.net"><img src="http://nanopay.net/img/logo.png" alt="" class="navbar-brand"/></a>
+	      <!-- Collapse-->
+	      <div class="collapse navbar-collapse">
+	        <!-- MENU-->
+	        <ul class="nav navbar-nav pull-right">
+	          <li><a id="nav-consumers" href="http://nanopay.net/consumers.html">Consumers</a></li>
+	          <li><a id="nav-merchants" href="http://nanopay.net/merchants.html">Merchants</a></li>
+	          <li><a id="nav-developers" href="http://nanopay.net/developers.html">Developers</a></li>
+	          <li><a id="nav-about" href="http://nanopay.net/about.html">About</a></li>
+	          <li><a id="nav-blog" href="/">Blog</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </div>
+	</header>
+
 
 	<div id="content" class="site-content">
 

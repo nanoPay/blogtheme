@@ -51,5 +51,18 @@ jQuery(document).ready(function(){
 		jQuery('html, body').animate({scrollTop : 0},800);
 		return false;
 	});
+	
+
+	// header shrink
+	jQuery(window).scroll(function () {
+	    if (jQuery(document).scrollTop() == 0) {
+	        jQuery('.header').removeClass('tiny');
+	    } else {
+	        jQuery('.header').addClass('tiny');
+	    }
+	});
+	// navigation
+	//jQuery('.nav').localScroll(6000);
+	//jQuery('#top').localScroll(6000);
 
 });
