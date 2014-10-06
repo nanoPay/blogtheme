@@ -1219,7 +1219,8 @@ p.logged-in-as {
 
 body {
 	font-family:'Source Sans Pro',sans-serif;
-	font-size:16px;
+	font-size:15px;
+	line-height:1.5;
 /*	background-color:#454547; */
 	background-color:#fff;
 	color:#5a5f66;
@@ -1383,4 +1384,10 @@ a:hover, a:focus {
 .navbar .navbar-nav li.active a:hover, .navbar .navbar-nav li:hover, .navbar .navbar-nav li.visited { 
 	background-color:transparent!important;
 	text-decoration:none;
+}
+
+.nav a:hover {
+	opacity: .8;
+	-moz-opacity: .8;
+	filter: alpha(opacity=80);
 }
