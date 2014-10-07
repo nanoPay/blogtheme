@@ -19,9 +19,28 @@
 
 <!-- favicon -->
 
-<?php if ( of_get_option( 'custom_favicon' ) ) { ?>
+<?php 
+/*
+if ( of_get_option( 'custom_favicon' ) ) { ?>
 <link rel="icon" href="<?php echo of_get_option( 'custom_favicon' ); ?>" />
-<?php } ?>
+} 
+*/
+?>
+<meta name="msapplication-square70x70logo" content="<?php echo get_template_directory_uri() ?>/images/windows-tile-70x70.png">
+<meta name="msapplication-square150x150logo" content="<?php echo get_template_directory_uri() ?>/images/windows-tile-150x150.png">
+<meta name="msapplication-square310x310logo" content="<?php echo get_template_directory_uri() ?>/images/windows-tile-310x310.png">
+<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri() ?>/images/windows-tile-144x144.png">
+<meta name="msapplication-TileColor" content="#8E3750">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="<?php echo get_template_directory_uri() ?>/images/apple-touch-icon-152x152-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="<?php echo get_template_directory_uri() ?>/images/apple-touch-icon-120x120-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="<?php echo get_template_directory_uri() ?>/images/apple-touch-icon-76x76-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="<?php echo get_template_directory_uri() ?>/images/apple-touch-icon-60x60-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo get_template_directory_uri() ?>/images/apple-touch-icon-144x144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo get_template_directory_uri() ?>/images/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_template_directory_uri() ?>/images/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon" sizes="57x57" href="<?php echo get_template_directory_uri() ?>/images/apple-touch-icon.png">
+<link rel="shortcut icon" href="<?php echo get_template_directory_uri() ?>/images/favicon.ico">
+<link rel="icon" type="image/png" sizes="64x64" href="<?php echo get_template_directory_uri() ?>/inc/images/favicon.png">
 
 <!--[if IE]><?php if ( of_get_option( 'custom_favicon' ) ) { ?><link rel="shortcut icon" href="<?php echo of_get_option( 'custom_favicon' ); ?>" /><?php } ?><![endif]-->
 
@@ -85,7 +104,7 @@
 	<header>
 	  <div class="navbar">
 	    <div class="header"><a data-toggle="collapse" data-target=".navbar-collapse" href="#" class="navbar-toggle"><i class="fa fa-align-justify fa-2x"></i></a>
-	      <!-- Logo--><a href="http://nanopay.net"><img src="http://nanopay.net/img/logo.png" alt="" class="navbar-brand"/></a>
+	      <!-- Logo--><a href="http://nanopay.net"><img src="<?php echo get_template_directory_uri() ?>/inc/images/logo.png" alt="" class="navbar-brand"/></a>
 	      <!-- Collapse-->
 	      <div class="collapse navbar-collapse">
 	        <!-- MENU-->
@@ -102,7 +121,7 @@
 	</header>
 
 
-	<div id="content" class="site-content">
+	<div class="site-content">
 
 			<div class="top-section">
 				<?php sparkling_featured_slider(); ?>
