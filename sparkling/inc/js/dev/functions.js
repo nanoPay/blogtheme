@@ -55,7 +55,7 @@ jQuery(document).ready(function(){
 
 	// header shrink
 	jQuery(window).scroll(function () {
-	    if (jQuery(document).scrollTop() == 0) {
+	    if (jQuery(document).scrollTop() < 50) {
 	        jQuery('.header').removeClass('tiny');
 	    } else {
 	        jQuery('.header').addClass('tiny');
