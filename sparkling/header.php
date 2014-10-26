@@ -26,20 +26,20 @@ if ( of_get_option( 'custom_favicon' ) ) { ?>
 } 
 */
 ?>
-<meta name="msapplication-square70x70logo" content="<?php echo get_template_directory_uri() ?>/images/windows-tile-70x70.png">
-<meta name="msapplication-square150x150logo" content="<?php echo get_template_directory_uri() ?>/images/windows-tile-150x150.png">
-<meta name="msapplication-square310x310logo" content="<?php echo get_template_directory_uri() ?>/images/windows-tile-310x310.png">
-<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri() ?>/images/windows-tile-144x144.png">
+<meta name="msapplication-square70x70logo" content="<?php echo get_template_directory_uri() ?>/inc/images/windows-tile-70x70.png">
+<meta name="msapplication-square150x150logo" content="<?php echo get_template_directory_uri() ?>/inc/images/windows-tile-150x150.png">
+<meta name="msapplication-square310x310logo" content="<?php echo get_template_directory_uri() ?>/inc/images/windows-tile-310x310.png">
+<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri() ?>/inc/images/windows-tile-144x144.png">
 <meta name="msapplication-TileColor" content="#8E3750">
-<link rel="apple-touch-icon-precomposed" sizes="152x152" href="<?php echo get_template_directory_uri() ?>/images/apple-touch-icon-152x152-precomposed.png">
-<link rel="apple-touch-icon-precomposed" sizes="120x120" href="<?php echo get_template_directory_uri() ?>/images/apple-touch-icon-120x120-precomposed.png">
-<link rel="apple-touch-icon-precomposed" sizes="76x76" href="<?php echo get_template_directory_uri() ?>/images/apple-touch-icon-76x76-precomposed.png">
-<link rel="apple-touch-icon-precomposed" sizes="60x60" href="<?php echo get_template_directory_uri() ?>/images/apple-touch-icon-60x60-precomposed.png">
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo get_template_directory_uri() ?>/images/apple-touch-icon-144x144-precomposed.png">
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo get_template_directory_uri() ?>/images/apple-touch-icon-114x114-precomposed.png">
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_template_directory_uri() ?>/images/apple-touch-icon-72x72-precomposed.png">
-<link rel="apple-touch-icon" sizes="57x57" href="<?php echo get_template_directory_uri() ?>/images/apple-touch-icon.png">
-<link rel="shortcut icon" href="<?php echo get_template_directory_uri() ?>/images/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="<?php echo get_template_directory_uri() ?>/inc/images/apple-touch-icon-152x152-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="<?php echo get_template_directory_uri() ?>/inc/images/apple-touch-icon-120x120-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="<?php echo get_template_directory_uri() ?>/inc/images/apple-touch-icon-76x76-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="<?php echo get_template_directory_uri() ?>/inc/images/apple-touch-icon-60x60-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo get_template_directory_uri() ?>/inc/images/apple-touch-icon-144x144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo get_template_directory_uri() ?>/inc/images/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_template_directory_uri() ?>/inc/images/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon" sizes="57x57" href="<?php echo get_template_directory_uri() ?>/inc/images/apple-touch-icon.png">
+<link rel="shortcut icon" href="<?php echo get_template_directory_uri() ?>/inc/images/favicon.ico">
 <link rel="icon" type="image/png" sizes="64x64" href="<?php echo get_template_directory_uri() ?>/inc/images/favicon.png">
 
 <!--[if IE]><?php if ( of_get_option( 'custom_favicon' ) ) { ?><link rel="shortcut icon" href="<?php echo of_get_option( 'custom_favicon' ); ?>" /><?php } ?><![endif]-->
@@ -64,43 +64,6 @@ if ( of_get_option( 'custom_favicon' ) ) { ?>
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 
-	<header id="masthead" class="site-header" role="banner" style="display:none">
-		<nav class="navbar navbar-default" role="navigation">
-			<div class="container">
-				<div class="row">
-                                        
-					<div class="site-navigation-inner col-sm-12">
-		        <div class="navbar-header">
-		            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-		                <span class="sr-only">Toggle navigation</span>
-		                <span class="icon-bar"></span>
-		                <span class="icon-bar"></span>
-		                <span class="icon-bar"></span>
-		            </button>
-
-				<?php if( get_header_image() != '' ) : ?>
-                                 
-					<div id="logo">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image(); ?>"  height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php bloginfo( 'name' ); ?>"/></a>
-					</div><!-- end of #logo -->
-
-				<?php endif; // header image was removed ?>
-
-				<?php if( !get_header_image() ) : ?>
-
-					<div id="logo">
-						<span class="site-name"><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
-					</div><!-- end of #logo -->
-
-				<?php endif; // header image was removed (again) ?>
-
-		        </div>
-					<?php sparkling_header_menu(); ?>
-					</div>
-		    </div>
-		  </div>
-		</nav><!-- .site-navigation -->
-	</header><!-- #masthead -->
 	<header>
 	  <div class="navbar">
 	    <div class="header"><a data-toggle="collapse" data-target=".navbar-collapse" href="#" class="navbar-toggle"><i class="fa fa-align-justify fa-2x"></i></a>
