@@ -1297,7 +1297,11 @@ a:hover, a:focus {
 	padding-top:0;
 }
 
-/* Navbar from marketing site */
+/* Navbar from marketing site/custom changes */
+
+.site-content {
+  padding-top:60px;
+}
 
 .site-header {
      width: 100%;
