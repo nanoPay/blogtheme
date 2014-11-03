@@ -306,7 +306,8 @@ footer.entry-meta {
 }
 .btn.btn-default.read-more {
   float: right;
-  margin-top: 10px;
+  margin-top: -60px;
+  height:40px;
   font-size: 12px;
   padding: 11px 13px;
 }
@@ -1428,6 +1429,11 @@ a:hover, a:focus {
 .navbar .navbar-collapse { position:absolute; top:59px; width:100%; padding:0 0; }
 .navbar .navbar-toggle { top:11px; }
 .intro-container .divider { width:15%!important; }
+
+.btn.btn-default.read-more {
+  float:none;
+  margin:0;
+}
 }
 
 @media screen and (max-width: 480px){
