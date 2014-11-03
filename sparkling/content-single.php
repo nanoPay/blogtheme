@@ -30,6 +30,9 @@
 
 		<div class="entry-content">
 			<?php the_content(); ?>
+			
+			<?php echo do_shortcode ('[shareaholic app="share_buttons" id="9e9ab75704456a31f0b747f06ffc6efb"]'); ?>
+			
 			<?php
 				wp_link_pages( array(
 					'before'            => '<div class="page-links">'.__( 'Pages:', 'sparkling' ),

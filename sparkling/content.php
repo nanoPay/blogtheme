@@ -37,6 +37,8 @@
 					<?php the_content(); ?>
 
 				<p><a class="btn btn-default read-more" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php _e( 'Read More', 'sparkling' ); ?></a></p>
+				
+				<?php echo do_shortcode ('[shareaholic app="share_buttons" id="9e9ab75704456a31f0b747f06ffc6efb"]'); ?>
 
 				<?php
 					wp_link_pages( array(
