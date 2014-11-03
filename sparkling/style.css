@@ -1396,6 +1396,10 @@ a:hover, a:focus {
 	filter: alpha(opacity=80);
 }
 
+.nav #nav-blog {
+  color:#A31A42;
+}
+
 /* mobile nav */
 
 @media screen and (min-width: 220px) and (max-width: 767px){
