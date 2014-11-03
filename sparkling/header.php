@@ -67,7 +67,7 @@ if ( of_get_option( 'custom_favicon' ) ) { ?>
 	<header>
 	  <div class="navbar">
 	    <div class="header"><a data-toggle="collapse" data-target=".navbar-collapse" href="#" class="navbar-toggle"><i class="fa fa-align-justify fa-2x"></i></a>
-	      <!-- Logo--><a href="http://nanopay.net"><img src="<?php echo get_template_directory_uri() ?>/inc/images/logo.png" alt="" class="navbar-brand"/></a>
+	      <!-- Logo--><a href="http://nanopay.net"><img src="<?php echo get_template_directory_uri() ?>/inc/images/logo.svg" alt="" class="navbar-brand"/></a>
 	      <!-- Collapse-->
 	      <div class="collapse navbar-collapse">
 	        <!-- MENU-->
