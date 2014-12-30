@@ -67,6 +67,24 @@ function sparkling_setup() {
 endif; // sparkling_setup
 add_action( 'after_setup_theme', 'sparkling_setup' );
 
+
+/* nanoPay Incident Tracker custom post type */
+function create_post_type() {
+  register_post_type( 'incident_tracker',
+    array(
+      'labels' => array(
+        'name' => __( 'Compromise Incidents' ),
+        'singular_name' => __( 'Compromise Instance' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+			'supports' => array('title', 'editor', 'thumbnail', 'custom-fields')
+    )
+  );
+}
+add_action( 'init', 'create_post_type' );
+
+
 /**
  * Register widgetized area and update sidebar with default widgets.
  */
