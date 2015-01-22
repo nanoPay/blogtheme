@@ -37,6 +37,7 @@ function sparkling_setup() {
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
 	add_theme_support( 'post-thumbnails' );
+	set_post_thumbnail_size( 0, 60, false );
 
   add_image_size( 'sparkling-featured', 750, 410, true );
 	add_image_size( 'tab-small', 0, 60 , false); // Small Thumbnail
