@@ -39,7 +39,7 @@ function sparkling_setup() {
 	add_theme_support( 'post-thumbnails' );
 
   add_image_size( 'sparkling-featured', 750, 410, true );
-	add_image_size( 'tab-small', 60, 60 , true); // Small Thumbnail
+	add_image_size( 'tab-small', 60, 60 , false); // Small Thumbnail
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
@@ -73,8 +73,8 @@ function create_post_type() {
   register_post_type( 'incident_tracker',
     array(
       'labels' => array(
-        'name' => __( 'Compromise Incidents' ),
-        'singular_name' => __( 'Compromise Instance' )
+        'name' => __( 'Fraud Incidents' ),
+        'singular_name' => __( 'Fraud Instance' )
       ),
       'public' => true,
       'has_archive' => true,
