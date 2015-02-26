@@ -82,6 +82,18 @@ function create_post_type() {
 			'supports' => array('title', 'editor', 'thumbnail', 'custom-fields', 'excerpt')
     )
   );
+	
+  register_post_type( 'faq',
+    array(
+      'labels' => array(
+        'name' => __( 'FAQ Questions' ),
+        'singular_name' => __( 'FAQ Question' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+			'supports' => array('title', 'editor', 'thumbnail', 'custom-fields', 'excerpt')
+    )
+  );
 }
 add_action( 'init', 'create_post_type' );
 
