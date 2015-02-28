@@ -72,8 +72,8 @@ if ( of_get_option( 'custom_favicon' ) ) { ?>
 	      <div class="collapse navbar-collapse">
 	        <!-- MENU-->
 	        <ul class="nav navbar-nav pull-right">
-	          <li><a id="nav-consumers" href="http://nanopay.net/consumers.html">Consumers</a></li>
-	          <li><a id="nav-merchants" href="http://nanopay.net/merchants.html">Merchants</a></li>
+						<li><a id="nav-merchants" href="http://nanopay.net/merchants.html">Merchants</a></li>
+	          <li><a id="nav-consumers" href="http://nanopay.net/callcenters.html">Call Centers</a></li>
 	          <li><a id="nav-developers" href="http://nanopay.net/developers.html">Developers</a></li>
 	          <li><a id="nav-about" href="http://nanopay.net/about.html">About</a></li>
 	          <li><a id="nav-blog" href="/">Blog</a></li>
