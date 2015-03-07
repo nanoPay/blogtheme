@@ -67,15 +67,15 @@ if ( of_get_option( 'custom_favicon' ) ) { ?>
 	<header>
 	  <div class="navbar">
 	    <div class="header"><a data-toggle="collapse" data-target=".navbar-collapse" href="#" class="navbar-toggle"><i class="fa fa-align-justify fa-2x"></i></a>
-	      <!-- Logo--><a href="http://nanopay.net"><img src="<?php echo get_template_directory_uri() ?>/inc/images/logo.svg" alt="" class="navbar-brand"/></a>
+	      <!-- Logo--><a href="https://nanopay.net"><img src="<?php echo get_template_directory_uri() ?>/inc/images/logo.svg" alt="" class="navbar-brand"/></a>
 	      <!-- Collapse-->
 	      <div class="collapse navbar-collapse">
 	        <!-- MENU-->
 	        <ul class="nav navbar-nav pull-right">
-						<li><a id="nav-merchants" href="http://nanopay.net/merchants.html">Merchants</a></li>
-	          <li><a id="nav-consumers" href="http://nanopay.net/callcenters.html">Call Centers</a></li>
-	          <li><a id="nav-developers" href="http://nanopay.net/developers.html">Developers</a></li>
-	          <li><a id="nav-about" href="http://nanopay.net/about.html">About</a></li>
+						<li><a id="nav-merchants" href="https://nanopay.net/merchants.html">Merchants</a></li>
+	          <li><a id="nav-consumers" href="https://nanopay.net/callcenters.html">Call Centers</a></li>
+	          <li><a id="nav-developers" href="https://nanopay.net/developers.html">Developers</a></li>
+	          <li><a id="nav-about" href="https://nanopay.net/about.html">About</a></li>
 	          <li><a id="nav-blog" href="/">Blog</a></li>
 	        </ul>
 	      </div>
